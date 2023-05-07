@@ -20,3 +20,19 @@ Esta prueba se ha entregado con [este enunciado](/Prueba-tecnica-frontend-2023.p
   1. Node: 20.1.0
 
 # Configuración
+Este proyecto lo he generado con Vite con las opciones de React, Typescript y SWC. Para ello he usado el comando:
+```console
+npm create vite@latest
+```
+Una vez que te descargues el proyecto, tienes que ejecutar los siguientes comandos para poder ejecutarlo:
+
+```console
+npm install
+npm start
+```
+
+Si lo que quieres es construír la aplicación en modo producción, después de instalas las dependencias debes ejecutar:
+
+```console
+npm build
+```
