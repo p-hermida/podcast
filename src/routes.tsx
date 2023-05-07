@@ -1,11 +1,12 @@
 import { RouteObject } from 'react-router-dom';
 
 import { ErrorBoundary } from 'react-error-boundary';
+import { EpisodeDetail, Home, PodcastDetail } from './pages';
 
 export const routes:RouteObject[] = [
   {
     path: '/',
-    element: <div>Home - Listado</div>,
+    element: <Home />,
     errorElement: <ErrorBoundary fallback={
       <div>
         Ha ocurrido un error desconocido. Recarga y, si persiste el error, 
@@ -15,11 +16,11 @@ export const routes:RouteObject[] = [
     children: [
       {
         path: 'podcast/:podcastId',
-        element: <div>Detalle de podcast</div>,
+        element: <PodcastDetail />,
         children: [
           {
             path: 'episode/:episodeId',
-            element: <div>Detalle de episodio</div>
+            element: <EpisodeDetail />
           }
         ]
       }
