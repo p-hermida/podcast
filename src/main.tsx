@@ -6,6 +6,7 @@ import { ErrorBoundary } from 'react-error-boundary';
 import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { routes } from './routes';
+import { Header } from './components';
 
 const router = createBrowserRouter(routes);
 
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         ponte en contacto con un administrador del sitio.
       </div>
     }>
+      <Header />
       <RouterProvider router={router} />
     </ErrorBoundary>
   </React.StrictMode>,

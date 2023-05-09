@@ -1,5 +1,5 @@
 import './header.css';
 
 export const Header = () => {
-  return '';
+  return <div>Header</div>;
 }
