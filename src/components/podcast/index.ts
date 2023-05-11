@@ -1,1 +1,1 @@
-export * from './Podcast';
+export * from './podcast.component';

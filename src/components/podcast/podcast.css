@@ -1,0 +1,29 @@
+.container-podcast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--textSecondary);
+  padding: 25px 30px;
+  width: 200px;
+  text-align: center;
+}
+
+.container-podcast img{
+  border-radius: 50%;
+}
+
+.container-podcast .title{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  color: var(--text);
+}
+
+.container-podcast .author{
+  font-size: 12px;
+  line-height: 13px;
+  color: var(--textSecondary);
+}

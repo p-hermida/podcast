@@ -1,6 +1,6 @@
 import { RouteObject } from 'react-router-dom';
 
-import { App, EpisodeDetail, Home, PodcastDetail } from './pages';
+import { App, EpisodeDetail, HomePage, PodcastDetail } from './pages';
 import { NotFound } from './components';
 
 export const routes:RouteObject[] = [
@@ -10,7 +10,7 @@ export const routes:RouteObject[] = [
     children: [
       {
         path: '',
-        element: <Home />
+        element: <HomePage />
       },
       {
         path: 'podcast/:podcastId',
