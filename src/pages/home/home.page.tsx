@@ -19,8 +19,8 @@ const Home = ({ getAll }) => {
 
 
   return <div className="container-list">
-    {list.map(( podcast: PodcastEntity) => {
-      return <Podcast podcast={podcast} />
+    {list.map(( podcast: PodcastEntity, index: number ) => {
+      return <Podcast podcast={podcast} key={index} />
     })}
   </div>;
 }
