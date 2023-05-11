@@ -1,4 +1,4 @@
-import { Podcast } from "../../../services";
+import { Podcast, PodcastDetail } from "../../../services";
 
 interface GeneralState {
   error: string | null;
@@ -7,4 +7,8 @@ interface GeneralState {
 
 export interface PodcastListState extends GeneralState {
   list: Podcast[];
+}
+
+export interface PodcastDetailState extends GeneralState {
+  detail: PodcastDetail | null;
 }

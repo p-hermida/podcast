@@ -1,9 +1,10 @@
-import { Podcast } from "./entities";
-import { doGetAll } from "./requests";
+import { Podcast, PodcastDetail } from "./entities";
+import { doGet, doGetAll } from "./requests";
 
-export type { Podcast };
+export type { Podcast, PodcastDetail };
 
 
 export default {
-  getAll: doGetAll
+  getAll: doGetAll,
+  get: doGet
 }

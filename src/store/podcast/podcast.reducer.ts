@@ -28,7 +28,7 @@ const podcastSlice = createSlice({
         state.list = [];
         state.isPending = false;
         state.error = (action.payload as Error).message;
-      });
+      })
   },
 });
 

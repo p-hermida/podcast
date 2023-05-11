@@ -1,4 +1,5 @@
 export * from './App';
 export * from './EpisodeDetail';
+export * from './episode-list';
 export * from './home/home.page';
-export * from './PodcastDetail';
+export * from './podcast-detail';

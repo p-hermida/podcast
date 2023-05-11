@@ -1,6 +1,6 @@
 import { RouteObject } from 'react-router-dom';
 
-import { App, EpisodeDetail, HomePage, PodcastDetail } from './pages';
+import { App, EpisodeDetail, EpisodeList, HomePage, PodcastDetailPage,  } from './pages';
 import { NotFound } from './components';
 
 export const routes:RouteObject[] = [
@@ -14,11 +14,17 @@ export const routes:RouteObject[] = [
       },
       {
         path: 'podcast/:podcastId',
-        element: <PodcastDetail />
-      },
-      {
-        path: 'podcast/:podcastId/episode/:episodeId',
-        element: <EpisodeDetail />
+        element: <PodcastDetailPage />,
+        children: [
+          {
+            path: '',
+            element: <EpisodeList />
+          },
+          {
+            path: 'episode/:episodeId',
+            element: <EpisodeDetail />
+          },
+        ]
       },
       {
         path: '*',

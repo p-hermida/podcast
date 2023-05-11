@@ -1,5 +1,5 @@
-import podcast, { Podcast } from './podcast';
+import podcast, { Podcast, PodcastDetail } from './podcast';
 
 export const PodcastService = podcast;
 
-export type { Podcast };
+export type { Podcast, PodcastDetail };
