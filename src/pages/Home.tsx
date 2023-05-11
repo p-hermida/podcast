@@ -1,3 +1,7 @@
+import { Link } from "react-router-dom";
+
 export const Home = () => {
-  return <div>Home</div>;
+  return <div>
+    <Link to='/podcast/1'>Test</Link>
+  </div>;
 }
