@@ -1,0 +1,17 @@
+.container-episode-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 100%;
+}
+
+.container-episode-detail .episode-description {
+  font-style: italic;
+  font-size: 13px;
+}
+
+@media(min-width: 760px) {
+  .container-episode-detail {
+    max-width: 800px;
+  }
+}

@@ -1,6 +1,6 @@
 import { RouteObject } from 'react-router-dom';
 
-import { App, EpisodeDetail, EpisodeList, HomePage, PodcastDetailPage,  } from './pages';
+import { App, EpisodeDetail, EpisodeList, HomePage, PodcastDetailPage } from './pages/index.ts';
 import { NotFound } from './components';
 
 export const routes:RouteObject[] = [
