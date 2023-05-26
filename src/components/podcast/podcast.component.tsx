@@ -7,7 +7,7 @@ import { PodcastParams } from './podcast.properties';
 export const Podcast = ({ podcast }: PodcastParams) => {
   return <Link to={`/podcast/${podcast.id}`}>
     <div className='container-podcast'>
-      <img src={podcast.image} />
+      <img src={podcast.image} alt={podcast.title} loading="lazy" />
       <div className='title'>{podcast.title}</div>
       <div className='author'>Author: {podcast.author}</div>
     </div>

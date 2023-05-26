@@ -22,7 +22,7 @@ const PodcastDetail = ({ get }) => {
 
   return <div className="container-detail">
     <Link to={`/podcast/${podcast?.id}`} className="podcast-data">
-      <img src={podcast?.image} />
+      <img src={podcast?.image} alt={podcast?.title} loading="lazy" />
       <div className='title'>{podcast?.title}</div>
       <div className='author'>by {podcast?.author}</div>
     </Link>
