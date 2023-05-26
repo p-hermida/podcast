@@ -8,7 +8,7 @@ import { RootState } from "../../store/reducer";
 import { Podcast as PodcastEntity } from "../../services";
 import { Podcast } from "../../components";
 
-const Home = ({ getAll }) => {
+const Home = ({ getAll }: any) => {
   const list = useSelector(
     (state: RootState) => getPodcastList(state)
   );

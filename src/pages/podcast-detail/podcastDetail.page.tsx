@@ -8,7 +8,7 @@ import { RootState } from "../../store/reducer";
 
 import { Link, Outlet, useParams } from 'react-router-dom';
 
-const PodcastDetail = ({ get }) => {
+const PodcastDetail = ({ get }: any) => {
   const { podcastId } = useParams<{ podcastId: string }>();
 
   const podcast = useSelector(
