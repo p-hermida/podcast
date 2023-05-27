@@ -4,6 +4,7 @@ Esta prueba se ha entregado con [este enunciado](/Prueba-tecnica-frontend-2023.p
 
 1. [Inicialización](#Inicialización)
 2. [Configuración](#Configuración)
+3. [Futuro](#Futuro)
 
 # Inicialización
 
@@ -38,3 +39,6 @@ npm build
 ```
 
 Esto generará una carpeta dist con los ficheros estáticos necesarios para ejecutarlos en un servidor. Se recomienda copiar estos ficheros en la raíz del servidor web para servirlo dónde necesites.
+
+# Futuro
+Hay 3 anys que se pueden ver al lanzar el linter pero por motivos de tiempo no lo he trabajado más.
