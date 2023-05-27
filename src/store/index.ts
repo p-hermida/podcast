@@ -4,7 +4,11 @@ import thunk from 'redux-thunk';
 
 import rootReducer from './reducer';
 
-const middlewares = [thunk, logger];
+const middlewares: any[] = [thunk];
+
+if (import.meta.env.MODE !== 'production') {
+  middlewares.push(logger);
+}
 
 const store = configureStore({
   reducer: rootReducer,

@@ -31,8 +31,10 @@ npm install
 npm start
 ```
 
-Si lo que quieres es construír la aplicación en modo producción, después de instalas las dependencias debes ejecutar:
+Si lo que quieres es construír la aplicación en modo producción, después de instalar las dependencias debes ejecutar:
 
 ```console
 npm build
 ```
+
+Esto generará una carpeta dist con los ficheros estáticos necesarios para ejecutarlos en un servidor. Se recomienda copiar estos ficheros en la raíz del servidor web para servirlo dónde necesites.
