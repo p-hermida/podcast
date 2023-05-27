@@ -1,6 +1,6 @@
 import './home.styles.css';
 
-import { useEffect } from "react";
+import { useCallback, useEffect } from "react";
 import { connect, useSelector } from "react-redux";
 
 import { getAll, getPodcastList } from "../../store/podcast";
@@ -13,9 +13,11 @@ const Home = ({ getAll }: any) => {
     (state: RootState) => getPodcastList(state)
   );
 
+  const request = useCallback(() => getAll(), [getAll]);
+
   useEffect(() => {
-    getAll();
-  }, []);
+    request();
+  }, [request]);
 
 
   return <div className="container-list">

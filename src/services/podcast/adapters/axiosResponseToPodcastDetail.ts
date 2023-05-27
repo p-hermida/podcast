@@ -1,5 +1,5 @@
 import { AxiosResponse } from "axios";
-import { PodcastDetail } from "..";
+import { PodcastDetail, EpisodeModel } from "../entities";
 
 export const axiosResponseToPodcastDetail = (data: AxiosResponse): PodcastDetail => {
   const { results } = JSON.parse(data.data.contents);
@@ -10,8 +10,8 @@ export const axiosResponseToPodcastDetail = (data: AxiosResponse): PodcastDetail
     title: results[0].collectionCensoredName,
     author: results[0].artistName,
     episodes: results
-      .filter((episode: any) => episode.kind === 'podcast-episode')
-      .map((episode: any) => {
+      .filter((episode: EpisodeModel) => episode.kind === 'podcast-episode')
+      .map((episode: EpisodeModel) => {
         return {
           id: episode.trackId,
           title: episode.trackName,
