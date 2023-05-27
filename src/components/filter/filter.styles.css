@@ -1,0 +1,22 @@
+#filter-container {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  margin-right: 99px;
+}
+
+#filter-container .counter {
+  background-color: #2d6dbc;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+#filter-container .form input {
+  padding: 6px 10px;
+  border-radius: 4px;
+}

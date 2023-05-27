@@ -3,11 +3,15 @@ import { Podcast, PodcastDetail, PodcastService } from '../../../services';
 
 export const getAll = createAsyncThunk<
   Podcast[], 
-  null,
+  string,
   { rejectValue: Error }
->('podcast/list', async () => {
+>('podcast/list', async (filter: string) => {
     const response = await PodcastService.getAll();
-    return response;
+    const regex = new RegExp(filter, 'i');
+    const filteredResponse = response.filter((podcast: Podcast) =>
+      regex.test(podcast.title) || regex.test(podcast.author)
+    );
+    return filteredResponse;
 });
 
 export const get = createAsyncThunk<
